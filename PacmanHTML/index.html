@@ -7,27 +7,22 @@
     <style type="text/css">
       @font-face {
 	    font-family: 'BDCartoonShoutRegular';
-        src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
+      src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
 	    font-weight: normal;
 	    font-style: normal;
       }
       #pacman {
-        height:450px;
-        width:342px;
-        margin:20px auto;
+        width:280px;
 
         position: absolute;
         top: 3%;
         left: 0;
         right: 0;
         zoom: 2.5;
+        margin: auto;
 
         background: rgba(255, 255, 255, 0);
-        border-radius: 16px;
         box-shadow: 0 0 5px  white, 0 0 5px  white, 0 0 5px  white;
-      }
-      canvas{
-        border-radius: 16px;
       }
       #shim { 
         font-family: BDCartoonShoutRegular; 
@@ -39,15 +34,19 @@
         width:342px;
         margin:0px auto; 
         font-family:sans-serif;
-        background: black;
+        background:black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       a { text-decoration:none; }
       .btn{
-        width: 220px;
-        height: 220px;
+        width: 150px;
+        height: 150px;
         
         text-align: center;
-        font-size: 80px;
+        font-size: 3rem;
 
         border: none;
       }
@@ -64,10 +63,11 @@
       #botonFlechaIzquierda{
         border-top-left-radius: 100%;
         border-bottom-left-radius: 100%;
+        margin-right: 73px;
       }
       .contaniner-buttons{
         position: absolute;
-        top: 66%;
+        top: 58%;
         left: 13%;
 
         width: 75%;
@@ -81,10 +81,22 @@
       #botonFlechaDerecha{
         border-top-right-radius: 100%;
         border-bottom-right-radius: 100%;
+        margin-left: 73px;
       }
       #botonFlechaAbajo{
         border-bottom-right-radius: 100%;
         border-bottom-left-radius: 100%;
+      }
+
+      #botonN{
+        position: absolute;
+        top: 23vh;
+        left: 25vh;
+        border-radius: 100%;
+        border: 2.5px solid white;
+
+        background-color: red;
+        color: white;
       }
     </style>
 
