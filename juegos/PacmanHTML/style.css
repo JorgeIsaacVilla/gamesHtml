@@ -86,7 +86,7 @@
       }
       @media (min-width:1120px){
         #pacman {
-          zoom: 1.2;
+          zoom: 0;
         }
         .btn{
           width: 50px;
