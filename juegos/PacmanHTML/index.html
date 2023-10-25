@@ -3,119 +3,24 @@
   <head>
      <meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=0.4, user-scalable=no">
     <title>Pacman</title>
-    
-    <style type="text/css">
-      @font-face {
-	    font-family: 'BDCartoonShoutRegular';
-      src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
-	    font-weight: normal;
-	    font-style: normal;
-      }
-      #pacman {
-        width:280px;
-
-        position: absolute;
-        top: 3%;
-        left: 0;
-        right: 0;
-        zoom: 2.5;
-        margin: auto;
-
-        background: rgba(255, 255, 255, 0);
-        box-shadow: 0 0 5px  white, 0 0 5px  white, 0 0 5px  white;
-      }
-      #shim { 
-        font-family: BDCartoonShoutRegular; 
-        position:absolute;
-        visibility:hidden
-      }
-      h1 { font-family: BDCartoonShoutRegular; text-align:center; font-size: 64px; color: blue}
-      body { 
-        width:342px;
-        margin:0px auto; 
-        font-family:sans-serif;
-        background:black;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      a { text-decoration:none; }
-      .btn{
-        width: 150px;
-        height: 150px;
-        
-        text-align: center;
-        font-size: 3rem;
-
-        border: none;
-      }
-      .btn:hover{
-        background: rgba(255, 255, 255, 0.726);
-        box-shadow: 0 0 5px  white, 0 0 5px  white, 0 0 5px  white;
-      
-      }
-      #botonFlechaArriba{
-        border-top-right-radius: 100%;
-        border-top-left-radius: 100%;
-
-      }
-      #botonFlechaIzquierda{
-        border-top-left-radius: 100%;
-        border-bottom-left-radius: 100%;
-        margin-right: 73px;
-      }
-      .contaniner-buttons{
-        position: absolute;
-        top: 58%;
-        left: 13%;
-
-        width: 75%;
-        height: 30vh;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      #botonFlechaDerecha{
-        border-top-right-radius: 100%;
-        border-bottom-right-radius: 100%;
-        margin-left: 73px;
-      }
-      #botonFlechaAbajo{
-        border-bottom-right-radius: 100%;
-        border-bottom-left-radius: 100%;
-      }
-
-      #botonN{
-        position: absolute;
-        top: 23vh;
-        left: 25vh;
-        border-radius: 100%;
-        border: 2.5px solid white;
-
-        background-color: red;
-        color: white;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
     <div id="shim">shim for font face</div>
-    <!-- <h1>Pacman</h1>
-    <a href="http://arandomurl.com/">Writeup</a> |
+    <h1>Pacman</h1>
+    <!-- <a href="http://arandomurl.com/">Writeup</a> |
     Code on <a href="http://arandomurl.com/">Github</a>-->
 
     <div id="pacman"></div>
 
     <div class="contaniner-buttons">
+      <button class="btn" id="botonN" onclick="pressKeyN('N')">Start</button>
       <button class="btn" id="botonFlechaArriba" onclick="pressArrowUp()">↑</button>
       
-      <div>
+      <div class="botones-laterales">
         <button class="btn" id="botonFlechaIzquierda" onclick="pressArrowLeft()">←</button>
-        <button class="btn" id="botonN" onclick="pressKeyN('N')">Start</button>
         <button class="btn" id="botonFlechaDerecha" onclick="pressArrowRight()">→</button>
       </div>
       <button class="btn" id="botonFlechaAbajo" onclick="pressArrowDown()">↓</button>

@@ -1,0 +1,105 @@
+ @font-face {
+	    font-family: 'BDCartoonShoutRegular';
+      src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal;
+      }
+
+      body { 
+        margin:0px auto; 
+        font-family:sans-serif;
+        background:black;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #pacman {
+        margin-top: 32px;
+        width:280px;
+        zoom: 2.15;
+      }
+      #shim { 
+        font-family: BDCartoonShoutRegular; 
+        position:absolute;
+        visibility:hidden;
+      }
+      h1 { 
+        font-family: BDCartoonShoutRegular; 
+        text-align:center; 
+        font-size: 58px; 
+        color: yellow;
+        margin-bottom: 0;
+      }
+      
+      a { text-decoration:none; }
+      .btn{
+        width: 170px;
+        height: 170px;
+        
+        text-align: center;
+        font-size: 6rem;
+
+        border: none;
+      }
+      .btn:hover{
+        background: rgba(255, 255, 255, 0.726);
+        box-shadow: 0 0 5px  white, 0 0 5px  white, 0 0 5px  white;
+      
+      }
+      .botones-laterales{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      #botonFlechaArriba{
+
+
+      }
+      #botonFlechaIzquierda{
+
+      }
+      .contaniner-buttons{
+        width: 75%;
+        height: 30vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #botonFlechaDerecha{
+
+      }
+      #botonFlechaAbajo{
+      }
+      #botonN{
+        position: absolute;
+        border-radius: 100%;
+        border: 2.5px solid white;
+        top: 80vh;
+        left: 16px;
+        font-size: 3rem;
+        background-color: red;
+        color: white;
+      }
+      @media (min-width:1120px){
+        #pacman {
+          zoom: 1.2;
+        }
+        .btn{
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          font-size: 2rem;
+          border: none;
+        }
+        .contaniner-buttons{
+          width: 150px;
+          display: none;
+        }
+        #botonN{
+          font-size: 1rem;
+        }
+      }
